@@ -3,23 +3,23 @@
   const navs = [
     {
       title: "About",
-      href: "/about",
+      href: "/about/",
     },
     {
       title: "My Skills",
-      href: "/skills",
+      href: "/skills/",
     },
     {
       title: "Work",
-      href: "/portfolio",
+      href: "/portfolio/",
     },
     {
       title: "Contact",
-      href: "/contact",
+      href: "/contact/",
     },
     {
       title: "Blog",
-      href: "/blog",
+      href: "/blog/",
     },
   ];
 

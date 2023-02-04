@@ -40,6 +40,6 @@
         <div class="eol"><p>End of Line</p></div>
       </div>
     </article>
-    <sidebar> <a href="/blog">Back to Blog</a> </sidebar>
+    <sidebar> <a href="/blog/">Back to Blog</a> </sidebar>
   </div>
 </section>

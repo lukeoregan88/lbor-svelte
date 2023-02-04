@@ -38,7 +38,13 @@
             webservers but know my way around many others. I am also constantly
             expanding my knowledge and working with new technologies such as
             Node, Next, React, Gatsby, and Svelte. (did I mention this site is
-            built In Svelte? and I love it!)
+            built In Svelte? and I love it! <a
+              href="https://github.com/lukeoregan88/lbor-svelte"
+              target="_blank"
+              rel="noreferrer"
+              >https://github.com/lukeoregan88 >Check it out and feel free to
+              Fork it</a
+            >)
           </p>
 
           <p>

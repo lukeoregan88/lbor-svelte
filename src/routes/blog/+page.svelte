@@ -9,7 +9,7 @@
     <p>Here are some of my latest posts.</p>
     <div class="posts">
       {#each posts as post}
-        <a href="/blog/{post.slug}">
+        <a href="/blog/{post.slug}/">
           <h2>{post.title.rendered}</h2>
           <date>{post.date}</date>
         </a>
