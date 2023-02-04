@@ -1,1 +1,24 @@
-/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+/**
+ * Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing
+ *
+ * @format
+ */
+
+// Dependencies
+/* Import only what you need from Bootstrap */
+@import "bootstrap/scss/bootstrap-reboot";
+// FontAwsome
+// importing core styling file
+// @import "@fortawesome/fontawesome-pro/scss/fontawesome";
+
+// // our project needs Solid + Brands
+// @import "@fortawesome/fontawesome-pro/scss/solid";
+// @import "@fortawesome/fontawesome-pro/scss/brands";
+
+// SITE
+// Navigation
+@import "./scss/navigation";
+// Site
+@import "./scss/blocks/blocks";
+@import "./scss/font";
+@import "./scss/site";

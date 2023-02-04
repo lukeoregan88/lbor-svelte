@@ -1,0 +1,70 @@
+/** @format */
+
+.site-header {
+  padding: 0;
+  position: fixed;
+  width: $headerWidth;
+  height: 100vh;
+  background: darken($mainColor, 2%);
+  z-index: 999;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .site-logo {
+    width: 100%;
+    padding: 1rem;
+    aspect-ratio: 3/2;
+    display: flex;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: scale(1);
+      transition: transform 0.2s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+      img {
+        width: 100%;
+        aspect-ratio: 3/2;
+        width: 50%;
+      }
+    }
+  }
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    a {
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0.5rem;
+      border-top: 1px rgba(255, 255, 255, 0.05) solid;
+
+      color: rgba($mainFont, 0.75);
+      text-decoration: none;
+      &:hover {
+        background: rgba(255, 255, 255, 0.05);
+      }
+      &:last-child {
+        border-bottom: 1px rgba(255, 255, 255, 0.05) solid;
+      }
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  margin-bottom: 30px;
+  a {
+    color: $mainColor;
+    filter: brightness(0) invert(1);
+    padding: 10px;
+    aspect-ratio: 1;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

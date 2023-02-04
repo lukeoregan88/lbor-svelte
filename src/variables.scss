@@ -1,1 +1,16 @@
-/* Variables and mixins declared here will be available in all other SCSS files */
+/**
+ * Variables and mixins declared here will be available in all other SCSS files
+ *
+ * @format
+ */
+
+$headerWidth: 150px;
+$mainColor: #1e2b31;
+$mainFont: white;
+
+//font
+$fontFamily: "Source Code Pro", monospace;
+
+.img-round {
+  border-radius: 50%;
+}
