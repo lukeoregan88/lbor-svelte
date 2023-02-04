@@ -1,16 +1,24 @@
 <script>
   import SvelteSeo from "svelte-seo";
   import { onMount } from "svelte";
+
   export let data;
   let { post } = data;
   post = post[0];
+  let twitterScript = false;
 
   const content = post.content.rendered;
   const searchURL = "https://platform.twitter.com/widgets.js";
 
   onMount(() => {
     if (content.indexOf(searchURL) !== -1) {
-      twttr.widgets.load();
+      if (window.twttr !== undefined) {
+        window.twttr.ready(function () {
+          twttr.widgets.load();
+        });
+      } else {
+        twitterScript = true;
+      }
     }
   });
 
@@ -20,6 +28,12 @@
   const date = new Date(dateString);
   const formattedDate = date.toLocaleDateString();
 </script>
+
+<svelte:head>
+  {#if twitterScript}
+    <script src="https://platform.twitter.com/widgets.js"></script>
+  {/if}
+</svelte:head>
 
 <SvelteSeo
   title="{post.title.rendered} | Blog | Luke O'Regan - Full Stack Developer"

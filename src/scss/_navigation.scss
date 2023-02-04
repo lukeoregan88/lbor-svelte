@@ -3,19 +3,24 @@
 .site-header {
   padding: 0;
   position: fixed;
-  width: $headerWidth;
-  height: 100vh;
+  width: 100%;
+  height: 70px;
   background: darken($mainColor, 2%);
   z-index: 999;
   transition: all 0.5s ease;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   .site-logo {
-    width: 100%;
+    width: 50%;
     padding: 1rem;
     aspect-ratio: 3/2;
     display: flex;
+    position: relative;
+    z-index: 999;
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+    }
     a {
       display: flex;
       align-items: center;
@@ -33,8 +38,14 @@
     }
   }
   .main-menu {
-    display: flex;
-    flex-direction: column;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include media-breakpoint-up(lg) {
+      flex-direction: column;
+      display: flex;
+    }
     a {
       width: 100%;
       text-align: center;
@@ -48,6 +59,50 @@
       }
       &:last-child {
         border-bottom: 1px rgba(255, 255, 255, 0.05) solid;
+      }
+    }
+    &.menuOpen {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    width: $headerWidth;
+    flex-direction: column;
+  }
+  .naviagtion {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    button {
+      position: relative;
+      z-index: 999;
+      aspect-ratio: 1;
+      background-color: #000;
+      border: none;
+      color: #fff;
+      svg {
+        aspect-ratio: 1;
+        width: 80%;
+        fill: #fff;
+      }
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      button {
+        display: none;
       }
     }
   }

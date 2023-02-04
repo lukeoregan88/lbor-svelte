@@ -14,13 +14,16 @@ body {
 }
 
 main {
-  margin-left: $headerWidth;
+  margin-left: 0;
   background: $mainColor;
   color: $mainFont;
+  @include media-breakpoint-up(lg) {
+    margin-left: $headerWidth;
+  }
 }
 
 section {
-  padding: 2rem;
+  padding: 3rem;
   .container {
     width: min(100%, 1000px);
     margin-inline: auto;
@@ -31,8 +34,12 @@ section {
       gap: 20px;
       justify-self: center;
       align-items: center;
+      flex-direction: column;
       .col {
         flex: 100%;
+      }
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
       }
     }
     h1 {
@@ -122,12 +129,16 @@ section {
       }
     }
   }
+  &:first-of-type {
+    padding-top: 20vh;
+  }
 }
 
 .follow-links {
   margin-top: 50px;
   display: flex;
   gap: 20px;
+  flex-direction: column;
   a {
     display: inline-flex;
     gap: 20px;
@@ -149,6 +160,9 @@ section {
       aspect-ratio: 1;
       width: 20px;
     }
+  }
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
   }
 }
 
@@ -224,10 +238,11 @@ section.post {
   padding-bottom: 33vh;
   .container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
   }
   article {
-    width: 70%;
+    width: 100%;
     margin-bottom: 50px;
     .post-header {
       margin-bottom: 20px;
@@ -267,6 +282,18 @@ section.post {
     }
   }
   sidebar {
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    .container {
+      flex-direction: row;
+    }
+    article {
+      width: 70%;
+    }
+    sidebar {
+      width: 30%;
+    }
   }
 }
 

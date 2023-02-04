@@ -41,9 +41,7 @@
             built In Svelte? and I love it! <a
               href="https://github.com/lukeoregan88/lbor-svelte"
               target="_blank"
-              rel="noreferrer"
-              >https://github.com/lukeoregan88 >Check it out and feel free to
-              Fork it</a
+              rel="noreferrer">Check it out and feel free to Fork it</a
             >)
           </p>
 
