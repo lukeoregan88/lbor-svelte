@@ -2,138 +2,99 @@
   import { Fancybox } from "@fancyapps/ui";
   import "@fancyapps/ui/dist/fancybox.css";
 
+  const work = [
+    {
+      thumbnail: "/work/screencapture-dda-co-uk-thumbnail.png",
+      large: "/work/screencapture-dda-co-uk.png",
+      title: "Direct Design",
+      description:
+        "My proudest part of this project was the interactive lead screen. Using native Javascript I built a script that allowed visitors to interact with the background and change the colour on mouse click.",
+      website: "https://dda.co.uk",
+    },
+    {
+      thumbnail: "/work/screencapture-lhoteldefrance-fr-thumbnail.png",
+      large: "/work/screencapture-lhoteldefrance-fr.png",
+      title: "Direct Design",
+      description:
+        "My proudest part of this project was the interactive lead screen. Using native Javascript I built a script that allowed visitors to interact with the background and change the colour on mouse click.",
+      website: "https://dda.co.uk",
+    },
+    {
+      thumbnail: "/work/screencapture-r3garageservices-co-uk-thumbnail.png",
+      large: "/work/screencapture-r3garageservices-co-uk.png",
+      title: "Direct Design",
+      description:
+        "My proudest part of this project was the interactive lead screen. Using native Javascript I built a script that allowed visitors to interact with the background and change the colour on mouse click.",
+      website: "https://dda.co.uk",
+    },
+    {
+      thumbnail: "/work/screencapture-szandratothmakeup-co-uk-thumbnail.png",
+      large: "/work/screencapture-szandratothmakeup-co-uk.png",
+      title: "Direct Design",
+      description:
+        "My proudest part of this project was the interactive lead screen. Using native Javascript I built a script that allowed visitors to interact with the background and change the colour on mouse click.",
+      website: "https://dda.co.uk",
+    },
+    {
+      thumbnail: "/work/screencapture-dda-co-uk-thumbnail.png",
+      large: "/work/screencapture-dda-co-uk.png",
+      title: "Direct Design",
+      description:
+        "My proudest part of this project was the interactive lead screen. Using native Javascript I built a script that allowed visitors to interact with the background and change the colour on mouse click.",
+      website: "https://dda.co.uk",
+    },
+    {
+      thumbnail: "/work/screencapture-lhoteldefrance-fr-thumbnail.png",
+      large: "/work/screencapture-lhoteldefrance-fr.png",
+      title: "Direct Design",
+      description:
+        "My proudest part of this project was the interactive lead screen. Using native Javascript I built a script that allowed visitors to interact with the background and change the colour on mouse click.",
+      website: "https://dda.co.uk",
+    },
+    {
+      thumbnail: "/work/screencapture-r3garageservices-co-uk-thumbnail.png",
+      large: "/work/screencapture-r3garageservices-co-uk.png",
+      title: "Direct Design",
+      description:
+        "My proudest part of this project was the interactive lead screen. Using native Javascript I built a script that allowed visitors to interact with the background and change the colour on mouse click.",
+      website: "https://dda.co.uk",
+    },
+    {
+      thumbnail: "/work/screencapture-szandratothmakeup-co-uk-thumbnail.png",
+      large: "/work/screencapture-szandratothmakeup-co-uk.png",
+      title: "Direct Design",
+      description:
+        "My proudest part of this project was the interactive lead screen. Using native Javascript I built a script that allowed visitors to interact with the background and change the colour on mouse click.",
+      website: "https://dda.co.uk",
+    },
+  ];
+
   Fancybox.bind("[data-fancybox]", {
     // Your options go here
+    animated: false,
+    showClass: false,
+    hideClass: false,
+    Image: {
+      zoom: false,
+      wheel: false,
+      click: false,
+      fit: "contain-w",
+    },
   });
 </script>
 
 <div class="work-feed">
-  <div class="item">
-    <a data-fancybox href="https://via.placeholder.com/600">
-      <div class="image">
-        <img
-          src="https://via.placeholder.com/600"
-          alt="Project 1"
-          decoding="async"
-          data-nimg="1"
-        />
-      </div>
-      <div class="text">
-        <h3>Project 1</h3>
-        <p>Project 1 description</p>
-      </div>
-    </a>
-  </div>
-  <div class="item">
-    <a data-fancybox href="https://via.placeholder.com/600">
-      <div class="image">
-        <img
-          src="https://via.placeholder.com/600"
-          alt="Project 2"
-          decoding="async"
-          data-nimg="1"
-        />
-      </div>
-      <div class="text">
-        <h3>Project 2</h3>
-        <p>Project 2 description</p>
-      </div>
-    </a>
-  </div>
-  <div class="item">
-    <a data-fancybox href="https://via.placeholder.com/600">
-      <div class="image">
-        <img
-          src="https://via.placeholder.com/600"
-          alt="Project 3"
-          decoding="async"
-          data-nimg="1"
-        />
-      </div>
-      <div class="text">
-        <h3>Project 3</h3>
-        <p>Project 3 description</p>
-      </div>
-    </a>
-  </div>
-  <div class="item">
-    <a data-fancybox href="https://via.placeholder.com/600">
-      <div class="image">
-        <img
-          src="https://via.placeholder.com/600"
-          alt="Project 4"
-          decoding="async"
-          data-nimg="1"
-        />
-      </div>
-      <div class="text">
-        <h3>Project 4</h3>
-        <p>Project 4 description</p>
-      </div>
-    </a>
-  </div>
-  <div class="item">
-    <a data-fancybox href="https://via.placeholder.com/600">
-      <div class="image">
-        <img
-          src="https://via.placeholder.com/600"
-          alt="Project 4"
-          decoding="async"
-          data-nimg="1"
-        />
-      </div>
-      <div class="text">
-        <h3>Project 5</h3>
-        <p>Project 5 description</p>
-      </div>
-    </a>
-  </div>
-  <div class="item">
-    <a data-fancybox href="https://via.placeholder.com/600">
-      <div class="image">
-        <img
-          src="https://via.placeholder.com/600"
-          alt="Project 4"
-          decoding="async"
-          data-nimg="1"
-        />
-      </div>
-      <div class="text">
-        <h3>Project 6</h3>
-        <p>Project 6 description</p>
-      </div>
-    </a>
-  </div>
-  <div class="item">
-    <a data-fancybox href="https://via.placeholder.com/600">
-      <div class="image">
-        <img
-          src="https://via.placeholder.com/600"
-          alt="Project 4"
-          decoding="async"
-          data-nimg="1"
-        />
-      </div>
-      <div class="text">
-        <h3>Project 7</h3>
-        <p>Project 7 description</p>
-      </div>
-    </a>
-  </div>
-  <div class="item">
-    <a data-fancybox href="https://via.placeholder.com/600">
-      <div class="image">
-        <img
-          src="https://via.placeholder.com/600"
-          alt="Project 4"
-          decoding="async"
-          data-nimg="1"
-        />
-      </div>
-      <div class="text">
-        <h3>Project 8</h3>
-        <p>Project 8 description</p>
-      </div>
-    </a>
-  </div>
+  {#each work as item}
+    <div class="item">
+      <a data-fancybox href={item.large} data-caption={item.description}>
+        <div class="image">
+          <img src={item.thumbnail} alt={item.title} decoding="async" />
+        </div>
+        <div class="text">
+          <h3>{item.title}</h3>
+          <p>{item.website}</p>
+        </div>
+      </a>
+    </div>
+  {/each}
 </div>

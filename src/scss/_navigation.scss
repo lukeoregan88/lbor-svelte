@@ -45,6 +45,7 @@
     @include media-breakpoint-up(lg) {
       flex-direction: column;
       display: flex;
+      width: 100%;
     }
     a {
       width: 100%;
@@ -101,6 +102,7 @@
     }
     @include media-breakpoint-up(lg) {
       width: 100%;
+      padding: 0;
       button {
         display: none;
       }
