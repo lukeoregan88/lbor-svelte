@@ -2,9 +2,9 @@
   import Social from "../components/social.svelte";
   import Canvas from "../components/homepage-canvas.svelte";
   import WorkFeed from "../components/workfeed.svelte";
-  import Follow from "../components/follows.svelte";
   import SvelteSeo from "svelte-seo";
   import Follows from "../components/follows.svelte";
+  import Contact from "../components/contact.svelte";
 </script>
 
 <SvelteSeo
@@ -17,23 +17,27 @@
 
   <div class="container">
     <Social />
-    <h1 class="font-bold text-3xl font-serif">Luke O'Regan</h1>
-    <p>Full Stack Developer / Wordpress Expert</p>
+    <div class="start-profile">
+      <img
+        alt="Luke O'Regan"
+        src="https://avatars.githubusercontent.com/u/976601?v=4"
+        width="100"
+        height="100"
+        decoding="async"
+        data-nimg="1"
+        class="img-round grayscale"
+        style="color: transparent;"
+      />
+      <div>
+        <h1 class="font-bold text-3xl font-serif">Luke O'Regan</h1>
+        <p>Full Stack Developer / Wordpress Expert</p>
+      </div>
+    </div>
+
     <p class="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
       Hey, I'm Luke. I'm the a <b>Full Stack Developer</b> I believe in the power
       of great code to build faster and great websites.
     </p>
-
-    <img
-      alt="Luke O'Regan"
-      src="https://avatars.githubusercontent.com/u/976601?v=4"
-      width="100"
-      height="100"
-      decoding="async"
-      data-nimg="1"
-      class="img-round grayscale"
-      style="color: transparent;"
-    />
 
     <Follows />
   </div>
@@ -46,22 +50,14 @@
           <h2 aria-label="My Portfolio" class="blast-root">My Portfolio</h2>
         </header>
         <p>
-          A small gallery of recent projects chosen by me. I've done them all
-          together with amazing people from companies around the globe. It's
-          only a drop in the ocean compared to the entire list.
-          <br />
+          A curated selection of recent projects, personally selected by me,
+          completed in collaboration with exceptional individuals from various
+          international companies. This is merely a fraction of the complete
+          portfolio.
+          <br /><br />
           Interested to see some more? Visit
           <a rel="work" href="/portfolio/">my work</a> page.
         </p>
-      </div>
-      <div>
-        <a rel="work" href="/portfolio/" class="flat-button">
-          <div>
-            <span class="bg" />
-            <span class="base" />
-            <span class="text">See more!</span>
-          </div>
-        </a>
       </div>
     </div>
   </div>
@@ -171,3 +167,4 @@
     </div>
   </div>
 </section>
+<Contact />

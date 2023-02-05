@@ -4,3 +4,14 @@ p,
 p > a {
   font-family: $fontFamily;
 }
+p a {
+  color: #ffc601;
+  text-decoration: none;
+  &:hover {
+    color: #ffc601;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: #ffc601;
+  }
+}

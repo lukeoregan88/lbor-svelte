@@ -51,8 +51,8 @@
               target="_blank"
               rel="noreferrer">LinkedIn</a
             >
-            profile for more details or just
-            <a href="/contact">contact</a> me.
+            profile for more details or
+            <a href="/contact">contact me</a> on other social platforms.
           </p>
         </div>
       </div>
@@ -60,71 +60,62 @@
         <div class="skills-details">
           <div class="chart">
             <span>Front-end</span>
-            <footer>
-              <div data-width="95%" style="width: 95%;" />
-            </footer>
+            <div>
+              <div data-width="95%" style="background: #ffc601;width: 95%;" />
+            </div>
           </div>
 
           <div class="chart">
             <span>Back-end</span>
-            <footer>
-              <div
-                data-width="75%"
-                style="background: rgb(255, 34, 83); width: 75%;"
-              />
-            </footer>
+            <div>
+              <div data-width="75%" style="background: #ffc601; width: 75%;" />
+            </div>
           </div>
-
+          <div class="chart">
+            <span>PHP</span>
+            <div>
+              <div data-width="95%" style="width: 95%; background:#9370DB;" />
+            </div>
+          </div>
           <div class="chart">
             <span>ReactJS</span>
-            <footer>
-              <div
-                data-width="70%"
-                style="background: rgb(210, 108, 213); width: 70%;"
-              />
-            </footer>
+            <div>
+              <div data-width="70%" style="background: #61DBFB; width: 70%;" />
+            </div>
           </div>
 
           <div class="chart">
             <span>Svelte</span>
-            <footer>
-              <div
-                data-width="70%"
-                style="background: rgb(210, 108, 213); width: 70%;"
-              />
-            </footer>
+            <div>
+              <div data-width="70%" style="background: #ff3c01; width: 70%;" />
+            </div>
           </div>
 
-          <div class="chart">
-            <span>PHP</span>
-            <footer>
-              <div data-width="55%" style="width: 55%;" />
-            </footer>
-          </div>
-
-          <div class="work-row">
-            <div class="work-box">
-              <header>Frontend developer</header>
-              <section>
-                To The End
-                <time>2017-2018</time>
-              </section>
-              <footer>
-                Award-winning Content Marketing Agency specialises in creating
-                and sharing engaging content.
-              </footer>
+          <div class="education-career-row">
+            <div class="education-career-box">
+              <div>University College for the Creative Arts at Epsom</div>
+              <div>
+                Ba(Hons) Graphic Design: New Media, 2:1
+                <time>2007 – 2010</time>
+              </div>
+              <div>
+                A cutting-edge course which explores the impact of digital
+                culture on communication design practice and prepares students
+                for a career in the design industry.
+              </div>
             </div>
 
-            <div class="work-box">
-              <header>Full stack developer</header>
-              <section>
-                Pixxels Digital
-                <time>2018-2021</time>
-              </section>
-              <footer>
-                Creative brand, website design and development studio that can
-                bring your online business dreams to life
-              </footer>
+            <div class="education-career-box">
+              <div>Senior Full-Stack Developer & Designer</div>
+              <div>
+                Direct Design Studio
+                <time>2011-Present</time>
+              </div>
+              <div>
+                Design agency with business intelligence who create engaging
+                advertising, interactive and content managed websites, corporate
+                identities and consumer led packaging.
+              </div>
             </div>
           </div>
         </div>
