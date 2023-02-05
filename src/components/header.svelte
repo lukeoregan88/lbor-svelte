@@ -28,13 +28,8 @@
 
   let menuOpen = false;
 
-  function handleMenuOpen() {
-    menuOpen = true;
-    document.body.addEventListener("click", handleMenuClose);
-  }
-  function handleMenuClose() {
-    menuOpen = false;
-    document.body.removeEventListener("click", handleMenuClose);
+  function handleClick() {
+    menuOpen = !menuOpen;
   }
 </script>
 
@@ -51,7 +46,7 @@
     </a>
   </div>
   <div class="naviagtion">
-    <button on:click|stopPropagation={handleMenuOpen}>
+    <button on:click|stopPropagation={handleClick}>
       {#if menuOpen}
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
           ><path
