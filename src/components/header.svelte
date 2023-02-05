@@ -28,8 +28,13 @@
 
   let menuOpen = false;
 
-  function handleClick() {
-    menuOpen = !menuOpen;
+  function handleMenuOpen() {
+    menuOpen = true;
+    document.body.addEventListener("click", handleMenuClose);
+  }
+  function handleMenuClose() {
+    menuOpen = false;
+    document.body.removeEventListener("click", handleMenuClose);
   }
 </script>
 
@@ -46,7 +51,7 @@
     </a>
   </div>
   <div class="naviagtion">
-    <button on:click={handleClick}>
+    <button on:click|stopPropagation={handleMenuOpen}>
       {#if menuOpen}
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
           ><path
@@ -61,7 +66,8 @@
         >
       {/if}
     </button>
-    <nav class="main-menu" class:menuOpen>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <nav class="main-menu" class:menuOpen on:click|stopPropagation={() => {}}>
       {#each navs as { title, href }}
         <a
           {href}
