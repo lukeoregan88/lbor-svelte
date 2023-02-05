@@ -2,15 +2,14 @@
   const work = [
     {
       thumbnail: "/work/screencapture-dda-co-uk-thumbnail.jpg?webp",
-      large: "%sveltekit.assets%/work/screencapture-dda-co-uk.jpg",
+      large: "/work/screencapture-dda-co-uk.jpg",
       title: "Direct Design",
       description:
         "My proudest part of this project was the interactive lead screen. Using native Javascript I built a script that allowed visitors to interact with the background and change the colour on mouse click.",
       website: "dda.co.uk",
     },
     {
-      thumbnail:
-        "/work/screencapture-lhoteldefrance-fr-thumbnail.jpg?webp&srcset",
+      thumbnail: "/work/screencapture-lhoteldefrance-fr-thumbnail.jpg",
       large: "/work/screencapture-lhoteldefrance-fr.jpg",
       title: "lhoteldefrance",
       description:
@@ -18,8 +17,7 @@
       website: "lhoteldefrance.fr",
     },
     {
-      thumbnail:
-        "/work/screencapture-r3garageservices-co-uk-thumbnail.jpg?webp&srcset",
+      thumbnail: "/work/screencapture-r3garageservices-co-uk-thumbnail.jpg",
       large: "/work/screencapture-r3garageservices-co-uk.jpg",
       title: "r3garageservices",
       description:
@@ -27,8 +25,7 @@
       website: "r3garageservices.co.uk",
     },
     {
-      thumbnail:
-        "/work/screencapture-szandratothmakeup-co-uk-thumbnail.jpg?webp&srcset",
+      thumbnail: "/work/screencapture-szandratothmakeup-co-uk-thumbnail.jpg",
       large: "/work/screencapture-szandratothmakeup-co-uk.jpg",
       title: "szandratothmakeup",
       description:
@@ -36,7 +33,7 @@
       website: "szandratothmakeup.co.uk",
     },
     {
-      thumbnail: "/work/screencapture-adcomms-co-uk-thumbnail.jpg?webp&srcset",
+      thumbnail: "/work/screencapture-adcomms-co-uk-thumbnail.jpg",
       large: "/work/screencapture-adcomms-co-uk.jpg",
       title: "AD Communications",
       description:
@@ -44,7 +41,7 @@
       website: "https://adcomms.co.uk/",
     },
     {
-      thumbnail: "/work/screencapture-meech-thumbnail.jpg?webp&srcset",
+      thumbnail: "/work/screencapture-meech-thumbnail.jpg",
       large: "/work/screencapture-meech.jpg",
       title: "Meech International",
       description:
@@ -52,7 +49,7 @@
       website: "https://meech.com",
     },
     {
-      thumbnail: "/work/screencapture-videohook-net-thumbnail.jpg?webp&srcset",
+      thumbnail: "/work/screencapture-videohook-net-thumbnail.jpg",
       large: "/work/screencapture-videohook-net.jpg",
       title: "Videohook",
       description:
@@ -60,7 +57,7 @@
       website: "https://www.videohook.net/",
     },
     {
-      thumbnail: "/work/screencapture-woking-ac-uk-thumbnail.jpg?webp&srcset",
+      thumbnail: "/work/screencapture-woking-ac-uk-thumbnail.jpg",
       large: "/work/screencapture-woking-ac-uk.jpg",
       title: "Woking College",
       description:
