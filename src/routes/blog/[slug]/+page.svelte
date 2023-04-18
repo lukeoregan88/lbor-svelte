@@ -1,3 +1,4 @@
+<!-- @format -->
 <script>
   import SvelteSeo from "svelte-seo";
   import { onMount } from "svelte";
@@ -20,6 +21,9 @@
         twitterScript = true;
       }
     }
+    const prismjs = document.createElement("script");
+    prismjs.src = "/prism/prism.js";
+    document.body.appendChild(prismjs);
   });
 
   const dateString = post.date;
@@ -33,6 +37,7 @@
   {#if twitterScript}
     <script src="https://platform.twitter.com/widgets.js"></script>
   {/if}
+  <link rel="stylesheet" href="/prism/prism.css" />
 </svelte:head>
 
 <SvelteSeo
