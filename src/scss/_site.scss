@@ -274,6 +274,10 @@ section.post {
       p {
         font-size: 1rem;
       }
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
     .post-footer {
       border-top: 1px solid rgba(255, 255, 255, 0.5);
